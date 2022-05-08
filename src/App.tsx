@@ -1,7 +1,5 @@
 import React from 'react';
-import { auth } from './services/firebase'
-import { SignIn, ChatRoom } from './components/signInComponent'
-
+import Room from './components/Room'
 function App() {
 
   return (
@@ -9,9 +7,7 @@ function App() {
    <header>
 
    </header>
-    <section>
-      {user ? <ChatRoom /> : <SignIn />}
-    </section>
+    <Room />
  </div>
   )
 }
